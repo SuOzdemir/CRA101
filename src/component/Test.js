@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 
 export default function Test({ baslik, children }) {
     const [sayac, setSayac] = useState(1);
+    const [sayacKare, setSayacKare] = useState(1);
 
     useEffect(() => {
         console.log('useEffect Sayaç = ', sayac);
