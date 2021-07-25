@@ -1,7 +1,15 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 export default function Test({ baslik, children }) {
     const [sayac, setSayac] = useState(1);
+
+    useEffect(() => {
+        console.log('useEffect Sayaç = ', sayac);
+    }, [sayac]);
+
+    useEffect(() => {
+        console.log('useEffect boş dependency Sayaç = ', sayac);
+    }, []);
 
     function handleButtonClick() {
         console.log('setSayac öncesi', sayac);
