@@ -6,6 +6,7 @@ export default function Test({ baslik, children }) {
 
     useEffect(() => {
         console.log('useEffect Sayaç = ', sayac);
+        setSayacKare(sayac * sayac);
     }, [sayac]);
 
     useEffect(() => {
@@ -23,7 +24,7 @@ export default function Test({ baslik, children }) {
     return (
       <div>
           <button onClick={() => handleButtonClick()}>Tıkla {sayac}</button>
-          <h5>{baslik}</h5>
+          <h5>{baslik} {sayacKare}</h5>
           {children}
       </div>
     );
