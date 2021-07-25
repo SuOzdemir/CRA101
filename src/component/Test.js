@@ -1,10 +1,10 @@
-export default function Test(props) {
+export default function Test({ baslik, p1, p2 }) {
 
     return (
       <div>
-          <h5>{props.baslik}</h5>
-          <p>Paragraf 01</p>
-          <p>Paragraf 02</p>
+          <h5>{baslik}</h5>
+          <p>{p1}</p>
+          <p>{p2}</p>
       </div>
     );
 }

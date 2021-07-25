@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Test baslik="Birinci Başlık" />
+        <Test baslik="Birinci Başlık" p1="Paragraf 01" />
         <Test  baslik="İkinci Başlık" />
       </header>
     </div>
