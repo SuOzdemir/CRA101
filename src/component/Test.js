@@ -1,9 +1,10 @@
-let sayac = 1;
+import {useState} from "react";
 
 export default function Test({ baslik, children }) {
+    const [sayac, setSayac] = useState(1);
 
     function handleButtonClick() {
-        sayac++;
+        setSayac(sayac + 1);
     }
 
     return (
